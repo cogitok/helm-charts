@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: 'git@github.com/cogitok/helm-charts.git'
     path: helm-charts/airflow
-    targetRevision: prd
+    targetRevision: 8.8.0
     helm:
       valueFiles:
-        - values.yaml
+        - sample-values-KubernetesExecutor.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: airflow
