@@ -222,7 +222,7 @@ dags:
     enabled: true
     repo: git@github.com/cogitok/dags.git
     branch: master
-    sshKeySecret: airflow-git-ssh-secret   
+    sshSecret: airflow-git-ssh-secret   
     
   
 
