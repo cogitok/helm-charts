@@ -220,9 +220,10 @@ dags:
   ## [FAQ] https://github.com/airflow-helm/charts/blob/main/charts/airflow/docs/faq/dags/load-dag-definitions.md
   gitSync:
     enabled: true
-    repo: git@github.com/cogitok/dags.git
+    repo: git@github.com:/cogitok/dags.git
     branch: master
-    sshSecret: airflow-git-ssh-secret   
+    sshSecret: airflow-git-ssh-secret
+    sshSecretKey: gitSshKey
     
   
 
@@ -279,6 +280,9 @@ postgresql:
   ## [WARNING] the embedded Postgres is NOT SUITABLE for production deployments of Airflow
   ## [WARNING] consider using an external database with `externalDatabase.*`
   enabled: true
+
+  existingSecret: airflow-postgresql
+  existingSecretKey: postgresql-password
 
   ## configs for the PVC of postgresql
   persistence:
