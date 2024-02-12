@@ -220,8 +220,8 @@ dags:
   ## [FAQ] https://github.com/airflow-helm/charts/blob/main/charts/airflow/docs/faq/dags/load-dag-definitions.md
   gitSync:
     enabled: true
-    repo: git@github.com:<username>/<private-repo-name>.git
-    branch: <branch-name>
+    repo: git@github.com:cogitok/dags.git
+    branch: main
 
 ###################################
 ## CONFIG | Kubernetes Ingress
