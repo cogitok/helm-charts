@@ -1141,7 +1141,7 @@ migrateDatabaseJob:
   useHelmHooks: false
   applyCustomEnv: false
 
-# Airflow webserver settings
+# Airflow webserver settingsw
 webserver:
   enabled: true
   # Add custom annotations to the webserver configmap

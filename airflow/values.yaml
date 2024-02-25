@@ -20,7 +20,7 @@ airflow:
   ## - allowed values: "CeleryExecutor", "KubernetesExecutor", "CeleryKubernetesExecutor"
   ## - customize the "KubernetesExecutor" pod-template with `airflow.kubernetesPodTemplate.*`
   ##
-  executor: CeleryExecutor
+  executor: KubernetesExecutor
 
   ## the fernet encryption key (sets `AIRFLOW__CORE__FERNET_KEY`)
   ## - [WARNING] you must change this value to ensure the security of your airflow
@@ -42,9 +42,9 @@ airflow:
   ##   https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html
   ##
   ## ____ EXAMPLE _______________
-  ##   config:
+  config:
   ##     # dag configs
-  ##     AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "True"
   ##     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
   ##
   ##     # email configs
