@@ -7,14 +7,14 @@ spec:
   project: default
   source:
     repoURL: 'git@github.com/cogitok/helm-charts.git'
-    path: helm-charts/airflow_official
-    targetRevision: 1.11.0
+    path: helm-charts
+    targetRevision: 1.12.0
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: airflowsec
+    namespace: airflow
   syncPolicy:
     automated:
       prune: true
