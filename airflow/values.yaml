@@ -45,7 +45,7 @@ airflow:
   config:
   ##     # dag configs
     AIRFLOW__CORE__LOAD_EXAMPLES: True"
-  ##     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
+    AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
   ##
   ##     # email configs
   ##     AIRFLOW__EMAIL__EMAIL_BACKEND: "airflow.utils.email.send_email_smtp"
