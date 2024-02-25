@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'git@github.com/cogitok/helm-charts.git'
     path: helm-charts
-    targetRevision: 1.12.0
+    targetRevision: HEAD
     helm:
       valueFiles:
         - values.yaml
