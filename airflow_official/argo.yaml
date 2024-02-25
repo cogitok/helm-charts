@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'git@github.com/cogitok/helm-charts.git'
-    path: helm-charts/airflow-official
+    path: helm-charts/airflow_official
     targetRevision: HEAD
     helm:
       valueFiles:
