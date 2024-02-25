@@ -1343,7 +1343,7 @@ dags:
 
     ## sub-path under `dags.persistence.existingClaim` to use
     ##
-    subPath: "/opt/airflow/dags"
+    subPath: ""
 
     ## the name of the StorageClass used by the PVC
     ## - if set to "", then `PersistentVolumeClaim/spec.storageClassName` is omitted
