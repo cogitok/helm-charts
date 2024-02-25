@@ -103,10 +103,6 @@ images:
     repository: ~
     tag: ~
     pullPolicy: IfNotPresent
-  statsd:
-    repository: quay.io/prometheus/statsd-exporter
-    tag: v0.26.0
-    pullPolicy: IfNotPresent
   redis:
     repository: redis
     tag: 7-bookworm
