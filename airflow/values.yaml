@@ -1339,7 +1339,7 @@ dags:
 
     ## the name of an existing PVC to use
     ##
-    existingClaim: ""
+    existingClaim: "airflow-dags"
 
     ## sub-path under `dags.persistence.existingClaim` to use
     ##
