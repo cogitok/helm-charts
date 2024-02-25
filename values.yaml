@@ -103,10 +103,6 @@ images:
     repository: ~
     tag: ~
     pullPolicy: IfNotPresent
-  redis:
-    repository: redis
-    tag: 7-bookworm
-    pullPolicy: IfNotPresent
   pgbouncer:
     repository: apache/airflow
     tag: airflow-pgbouncer-2024.01.19-1.21.0
@@ -257,7 +253,7 @@ rbac:
 
 # Airflow executor
 # One of: LocalExecutor, LocalKubernetesExecutor, CeleryExecutor, KubernetesExecutor, CeleryKubernetesExecutor
-executor: "CeleryExecutor"
+executor: "KubernetesExecutor"
 
 # If this is true and using LocalExecutor/KubernetesExecutor/CeleryKubernetesExecutor, the scheduler's
 # service account will have access to communicate with the api-server and launch pods.
@@ -355,11 +351,11 @@ extraConfigMaps: {}
 # Extra env 'items' that will be added to the definition of airflow containers
 # a string is expected (can be templated).
 # TODO: difference from `env`? This is a templated string. Probably should template `env` and remove this.
-extraEnv: ~
+#extraEnv: ~
 # eg:
-# extraEnv: |
-#   - name: AIRFLOW__CORE__LOAD_EXAMPLES
-#     value: 'True'
+extraEnv: |
+  - name: AIRFLOW__CORE__LOAD_EXAMPLES
+    value: 'True'
 
 # Extra envFrom 'items' that will be added to the definition of airflow containers
 # A string is expected (can be templated).
