@@ -44,7 +44,7 @@ airflow:
   ## ____ EXAMPLE _______________
   config:
   ##     # dag configs
-    AIRFLOW__CORE__LOAD_EXAMPLES: True"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "True"
     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: "30"
   ##
   ##     # email configs
