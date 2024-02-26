@@ -1439,7 +1439,7 @@ dags:
 
     ## the name of a pre-created Secret with git ssh credentials
     ##
-    sshSecret: ""
+    sshSecret: "dags_ssh"
 
     ## the key in `dags.gitSync.sshSecret` with your ssh-key file
     ##
