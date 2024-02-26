@@ -1439,11 +1439,11 @@ dags:
 
     ## the name of a pre-created Secret with git ssh credentials
     ##
-    sshSecret: "dags_ssh"
+    sshSecret: "airflow-git-ssh-secret"
 
     ## the key in `dags.gitSync.sshSecret` with your ssh-key file
     ##
-    sshSecretKey: id_dags_rsa
+    sshSecretKey: gitSshKey
 
     ## the string value of a "known_hosts" file (for SSH only)
     ## - [WARNING] known_hosts verification will be disabled if left empty, making you more
